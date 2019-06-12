@@ -18,56 +18,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cNM-m8-17K">
-                                <rect key="frame" x="266" y="35" width="364" height="344"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cNM-m8-17K">
+                                <rect key="frame" x="264" y="41.5" width="368" height="331"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="F8h-vj-d9U">
-                                        <rect key="frame" x="0.0" y="0.0" width="364" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="0.0"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d95-iW-62Z">
-                                                <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="⬇️"/>
                                                 <connections>
                                                     <action selector="oneButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvY-37-ME5"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEd-W6-rjL">
-                                                <rect key="frame" x="53" y="0.0" width="46.5" height="30"/>
+                                                <rect key="frame" x="53.5" y="0.0" width="47.5" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="⬇️"/>
                                                 <connections>
                                                     <action selector="twoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qmf-uG-zkL"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMI-Bq-WA1">
-                                                <rect key="frame" x="105.5" y="0.0" width="47" height="30"/>
+                                                <rect key="frame" x="107" y="0.0" width="47.5" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="⬇️"/>
                                                 <connections>
                                                     <action selector="threeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xQ-0W-koi"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8P-lz-vIH">
-                                                <rect key="frame" x="158.5" y="0.0" width="47" height="30"/>
+                                                <rect key="frame" x="160.5" y="0.0" width="47" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="⬇️"/>
                                                 <connections>
                                                     <action selector="fourButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbD-y7-lIn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28Q-Rh-W9b">
-                                                <rect key="frame" x="211.5" y="0.0" width="47" height="30"/>
+                                                <rect key="frame" x="213.5" y="0.0" width="47.5" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="⬇️"/>
                                                 <connections>
                                                     <action selector="fiveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="654-nU-Kar"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8h-9h-8FX">
-                                                <rect key="frame" x="264.5" y="0.0" width="46.5" height="30"/>
+                                                <rect key="frame" x="267" y="0.0" width="47.5" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="⬇️"/>
                                                 <connections>
                                                     <action selector="sixButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJr-OG-JMY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOW-Wd-OkO">
-                                                <rect key="frame" x="317" y="0.0" width="47" height="30"/>
+                                                <rect key="frame" x="320.5" y="0.0" width="47.5" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="⬇️"/>
                                                 <connections>
                                                     <action selector="sevenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2y0-jS-jLQ"/>
@@ -76,188 +83,188 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3rS-8d-A4P">
-                                        <rect key="frame" x="0.0" y="32" width="364" height="312"/>
+                                        <rect key="frame" x="0.0" y="16" width="368" height="315"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="giV-GD-EMK">
-                                                <rect key="frame" x="0.0" y="0.0" width="52" height="312"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="315"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wJ1-8t-5Ay">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="wJ1-8t-5Ay" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="52.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="wJ1-8t-5Ay" secondAttribute="height" multiplier="1:1" id="J56-xT-MPY"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gj8-xE-XRG">
-                                                        <rect key="frame" x="0.0" y="52" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="gj8-xE-XRG" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="52.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RlQ-Mf-t8A">
-                                                        <rect key="frame" x="0.0" y="104" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="RlQ-Mf-t8A" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="105" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C7L-VY-0vn">
-                                                        <rect key="frame" x="0.0" y="156" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="C7L-VY-0vn" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="157.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ymm-I0-70U">
-                                                        <rect key="frame" x="0.0" y="208" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="ymm-I0-70U" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="210" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8wM-d6-qIH">
-                                                        <rect key="frame" x="0.0" y="260" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="8wM-d6-qIH" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="262.5" width="52.5" height="52.5"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0rS-Ia-zyf">
-                                                <rect key="frame" x="52" y="0.0" width="52" height="312"/>
+                                                <rect key="frame" x="52.5" y="0.0" width="52.5" height="315"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NfX-2F-Plv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="NfX-2F-Plv" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="52.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="NfX-2F-Plv" secondAttribute="height" multiplier="1:1" id="Q6k-0C-fdK"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aFh-xl-tWa">
-                                                        <rect key="frame" x="0.0" y="52" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="aFh-xl-tWa" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="52.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eMR-Kb-Xwo">
-                                                        <rect key="frame" x="0.0" y="104" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="eMR-Kb-Xwo" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="105" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qQL-RN-ESw">
-                                                        <rect key="frame" x="0.0" y="156" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="qQL-RN-ESw" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="157.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AYx-Zb-Ny4">
-                                                        <rect key="frame" x="0.0" y="208" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="AYx-Zb-Ny4" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="210" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A7N-35-Wd9">
-                                                        <rect key="frame" x="0.0" y="260" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="A7N-35-Wd9" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="262.5" width="52.5" height="52.5"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZAa-TY-bTQ">
-                                                <rect key="frame" x="104" y="0.0" width="52" height="312"/>
+                                                <rect key="frame" x="105" y="0.0" width="52.5" height="315"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iE4-hz-UDe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="iE4-hz-UDe" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="52.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="iE4-hz-UDe" secondAttribute="height" multiplier="1:1" id="muR-qz-f17"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M6u-JL-lqk">
-                                                        <rect key="frame" x="0.0" y="52" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="M6u-JL-lqk" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="52.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o64-94-6Tf">
-                                                        <rect key="frame" x="0.0" y="104" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="o64-94-6Tf" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="105" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5nU-TU-A8c">
-                                                        <rect key="frame" x="0.0" y="156" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="5nU-TU-A8c" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="157.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MKe-Vs-JkX">
-                                                        <rect key="frame" x="0.0" y="208" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="MKe-Vs-JkX" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="210" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xqf-j6-EqN">
-                                                        <rect key="frame" x="0.0" y="260" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="xqf-j6-EqN" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="262.5" width="52.5" height="52.5"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="e8z-Nh-yYd">
-                                                <rect key="frame" x="156" y="0.0" width="52" height="312"/>
+                                                <rect key="frame" x="157.5" y="0.0" width="53" height="315"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H49-Vd-0bt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="H49-Vd-0bt" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53" height="52.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="H49-Vd-0bt" secondAttribute="height" multiplier="1:1" id="PSg-FL-jCM"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n3D-Yx-seP">
-                                                        <rect key="frame" x="0.0" y="52" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="n3D-Yx-seP" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="52.5" width="53" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N1B-qQ-EBg">
-                                                        <rect key="frame" x="0.0" y="104" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="N1B-qQ-EBg" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="105" width="53" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="03i-5x-ave">
-                                                        <rect key="frame" x="0.0" y="156" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="03i-5x-ave" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="157.5" width="53" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H75-fK-UTE">
-                                                        <rect key="frame" x="0.0" y="208" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="H75-fK-UTE" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="210" width="53" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FHt-Yu-8Yw">
-                                                        <rect key="frame" x="0.0" y="260" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="FHt-Yu-8Yw" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="262.5" width="53" height="52.5"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pZL-VE-e7h">
-                                                <rect key="frame" x="208" y="0.0" width="52" height="312"/>
+                                                <rect key="frame" x="210.5" y="0.0" width="52.5" height="315"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="33y-Xn-smk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="33y-Xn-smk" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="52.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="33y-Xn-smk" secondAttribute="height" multiplier="1:1" id="uGg-CF-w2J"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rlr-Qx-00b">
-                                                        <rect key="frame" x="0.0" y="52" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="rlr-Qx-00b" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="52.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lvW-rW-CNp">
-                                                        <rect key="frame" x="0.0" y="104" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="lvW-rW-CNp" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="105" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="orY-Bh-l3P">
-                                                        <rect key="frame" x="0.0" y="156" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="orY-Bh-l3P" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="157.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4L0-UT-mRx">
-                                                        <rect key="frame" x="0.0" y="208" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="4L0-UT-mRx" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="210" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-Rj-YaW">
-                                                        <rect key="frame" x="0.0" y="260" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-Rj-YaW" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="262.5" width="52.5" height="52.5"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ch3-1q-cJ2">
-                                                <rect key="frame" x="260" y="0.0" width="52" height="312"/>
+                                                <rect key="frame" x="263" y="0.0" width="52.5" height="315"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4e8-Fp-RAx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="4e8-Fp-RAx" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="52.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="4e8-Fp-RAx" secondAttribute="height" multiplier="1:1" id="Grn-aJ-qht"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-HI-j7g">
-                                                        <rect key="frame" x="0.0" y="52" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-HI-j7g" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="52.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xoF-67-VFz">
-                                                        <rect key="frame" x="0.0" y="104" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="xoF-67-VFz" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="105" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E7g-ES-0HE">
-                                                        <rect key="frame" x="0.0" y="156" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="E7g-ES-0HE" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="157.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pOp-UE-BlJ">
-                                                        <rect key="frame" x="0.0" y="208" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="pOp-UE-BlJ" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="210" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C3T-19-Dmx">
-                                                        <rect key="frame" x="0.0" y="260" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="C3T-19-Dmx" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="262.5" width="52.5" height="52.5"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lB2-S3-nwa">
-                                                <rect key="frame" x="312" y="0.0" width="52" height="312"/>
+                                                <rect key="frame" x="315.5" y="0.0" width="52.5" height="315"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bzG-Or-DVe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="bzG-Or-DVe" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="52.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="bzG-Or-DVe" secondAttribute="height" multiplier="1:1" id="4c7-e0-stm"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Va-ug-wTw">
-                                                        <rect key="frame" x="0.0" y="52" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="5Va-ug-wTw" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="52.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcc-vL-bzP">
-                                                        <rect key="frame" x="0.0" y="104" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="dcc-vL-bzP" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="105" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MHJ-rG-erk">
-                                                        <rect key="frame" x="0.0" y="156" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="MHJ-rG-erk" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="157.5" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NX0-nf-jGg">
-                                                        <rect key="frame" x="0.0" y="208" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="NX0-nf-jGg" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="210" width="52.5" height="52.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="enu-ZJ-fsd">
-                                                        <rect key="frame" x="0.0" y="260" width="52" height="52"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayPiece" translatesAutoresizingMaskIntoConstraints="NO" id="enu-ZJ-fsd" customClass="ConnectFourImageView" customModule="TheGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="262.5" width="52.5" height="52.5"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -265,14 +272,15 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="F8h-vj-d9U" secondAttribute="trailing" id="6xx-Go-EZS"/>
-                                    <constraint firstItem="F8h-vj-d9U" firstAttribute="leading" secondItem="cNM-m8-17K" secondAttribute="leading" id="Eqv-18-Erc"/>
+                                    <constraint firstAttribute="trailing" secondItem="F8h-vj-d9U" secondAttribute="trailing" id="IlH-Up-wjn"/>
+                                    <constraint firstItem="F8h-vj-d9U" firstAttribute="leading" secondItem="cNM-m8-17K" secondAttribute="leading" id="bO4-HP-9VY"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cNM-m8-17K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0My-RX-BZi"/>
+                            <constraint firstItem="cNM-m8-17K" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="7qX-Wf-IQI"/>
                             <constraint firstItem="cNM-m8-17K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J9O-xh-Foa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -283,4 +291,7 @@
             <point key="canvasLocation" x="61" y="192"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="grayPiece" width="240" height="240"/>
+    </resources>
 </document>
