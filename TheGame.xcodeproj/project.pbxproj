@@ -12,6 +12,7 @@
 		17091DCE22B1796F003AD823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17091DCC22B1796F003AD823 /* Main.storyboard */; };
 		17091DD022B17971003AD823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17091DCF22B17971003AD823 /* Assets.xcassets */; };
 		17091DD322B17971003AD823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17091DD122B17971003AD823 /* LaunchScreen.storyboard */; };
+		17091DDB22B1ACF3003AD823 /* ConnectFourImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17091DDA22B1ACF3003AD823 /* ConnectFourImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		17091DCF22B17971003AD823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17091DD222B17971003AD823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17091DD422B17971003AD823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17091DDA22B1ACF3003AD823 /* ConnectFourImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFourImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +59,20 @@
 				17091DC822B1796F003AD823 /* AppDelegate.swift */,
 				17091DCA22B1796F003AD823 /* ViewController.swift */,
 				17091DCC22B1796F003AD823 /* Main.storyboard */,
+				17091DDC22B1ACF8003AD823 /* Custom View */,
 				17091DCF22B17971003AD823 /* Assets.xcassets */,
 				17091DD122B17971003AD823 /* LaunchScreen.storyboard */,
 				17091DD422B17971003AD823 /* Info.plist */,
 			);
 			path = TheGame;
+			sourceTree = "<group>";
+		};
+		17091DDC22B1ACF8003AD823 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				17091DDA22B1ACF3003AD823 /* ConnectFourImageView.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17091DCB22B1796F003AD823 /* ViewController.swift in Sources */,
+				17091DDB22B1ACF3003AD823 /* ConnectFourImageView.swift in Sources */,
 				17091DC922B1796F003AD823 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
