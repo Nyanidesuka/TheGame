@@ -257,6 +257,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Users" id="h8C-Pd-6jh"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toGamePlay" id="chy-hi-eyW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EiT-uj-Lne" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,10 +297,10 @@
             </objects>
             <point key="canvasLocation" x="1343" y="877"/>
         </scene>
-        <!--Will Delete-->
+        <!--Tab Bar Controller-->
         <scene sceneID="JMW-az-frm">
             <objects>
-                <tabBarController storyboardIdentifier="NavController" id="agr-cI-wHb" customClass="WillDelete" customModule="TheGame" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="NavController" id="agr-cI-wHb" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wvF-Ef-E2I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -864,4 +867,7 @@
         <image name="redPiece" width="240" height="240"/>
         <image name="yellowPiece" width="240" height="240"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="chy-hi-eyW"/>
+    </inferredMetricsTieBreakers>
 </document>

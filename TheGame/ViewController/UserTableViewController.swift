@@ -9,46 +9,55 @@
 import UIKit
 
 class UserTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return UserController.shared.allUsers.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath)
         
         let user = UserController.shared.allUsers[indexPath.row]
         cell.textLabel?.text = user.username
-
+        
         return cell
     }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presentInviteAlert(title: "It's a Dual", message: "Would you like to challenge \(UserController.shared.allUsers[indexPath.row].username)" )
     }
-    */
     
-    func presenetSimpleInputAlert(title: String, message: String){
+    
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toGamePlay" {
+            
+        }
+     }
+    
+    
+    func presentInviteAlert(title: String, message: String){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let dismissAction = UIAlertAction(title: "ok", style: .cancel, handler: nil)
+        let dismissAction = UIAlertAction(title: "I'm too scared", style: .cancel, handler: nil)
+        let challengeAction = UIAlertAction(title: "Challenge", style: .default) { (_) in
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "toGamePlay", sender: nil)
+                
+            }
+        }
         alertController.addAction(dismissAction)
+        alertController.addAction(challengeAction)
         self.present(alertController, animated: true)
     }
-
+    
 }
+
