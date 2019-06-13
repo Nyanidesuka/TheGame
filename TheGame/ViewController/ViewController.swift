@@ -14,6 +14,15 @@ class ViewController: UIViewController {
     //Whose turn is it? true = Red, false = Yellow
     var playerTurn: Bool = false
     
+    //whats the active game?
+    var activeGame: Game?{
+        didSet{
+            loadViewIfNeeded()
+            guard let game = activeGame else {return}
+            GameController.shared.convertIntsToPlayfield(fromArray: game.playField, toPlayfield: self.playField)
+        }
+    }
+    
     //columns. These are arrays full of the references to the imageViews in the coresponding column. Numbered assuming top to bottom, left to right
     @IBOutlet var columnOneCollection: [ConnectFourImageView]!
     
@@ -44,7 +53,6 @@ class ViewController: UIViewController {
     //MARK: Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        //i added all the outlets in the wrong order and reversin them will give us easier columns to work with
     }
     
     func dropPiece(intoColumn column: Int){
@@ -80,6 +88,5 @@ class ViewController: UIViewController {
             }
         }
     }
-    
 }
 
