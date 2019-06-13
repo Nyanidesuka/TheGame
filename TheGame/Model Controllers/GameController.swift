@@ -114,6 +114,16 @@ class GameController{
         return returnArray
     }
     
+    func convertIntsToPlayfield(fromArray array: [[Int?]], toPlayfield playField: [[ConnectFourImageView]]){
+        for i in 0...6{
+            for j in 0...5{
+                if let color = array[i][j]{
+                    playField[i][j].pieceColor = color
+                }
+            }
+        }
+    }
+    
     //we might wanna delete games; i'm not sure.
     
     

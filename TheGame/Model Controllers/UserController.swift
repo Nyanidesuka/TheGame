@@ -85,4 +85,22 @@ class UserController{
             })
         }
     }
+    
+    func fetchAllUsers(completion: @escaping (Bool) -> Void){
+        //we need to grab all the users of an app and throw them into an array
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: UserKeys.typeKey, predicate: predicate)
+        self.publicDB.perform(query, inZoneWith: nil) { (records, error) in
+            if let error = error{
+                print("there was an error in \(#function); \(error.localizedDescription)")
+                completion(false)
+                return
+            }
+            //unwrap the records
+            guard let records = records else {completion(false); return}
+            let users = records.compactMap({return User(record: $0)})
+            UserController.shared.allUsers = users
+            completion(true)
+        }
+    }
 }
