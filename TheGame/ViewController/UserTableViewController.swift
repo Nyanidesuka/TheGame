@@ -18,15 +18,22 @@ class UserTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return UserController.shared.allUsers.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath)
+        
+        let user = UserController.shared.allUsers[indexPath.row]
+        cell.textLabel?.text = user.username
 
         return cell
     }
-
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        <#code#>
+//    }
+    
     /*
     // MARK: - Navigation
 
@@ -36,5 +43,12 @@ class UserTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func presenetSimpleInputAlert(title: String, message: String){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let dismissAction = UIAlertAction(title: "ok", style: .cancel, handler: nil)
+        alertController.addAction(dismissAction)
+        self.present(alertController, animated: true)
+    }
 
 }

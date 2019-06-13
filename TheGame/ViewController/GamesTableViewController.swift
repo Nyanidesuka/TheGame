@@ -18,15 +18,15 @@ class GamesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return GameController.shared.games.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GameCell", for: indexPath)
 
-        // Configure the cell...
-
+        let game = GameController.shared.games[indexPath.row]
+        cell.textLabel?.text = "\(game.players[0])"
         return cell
     }
 
