@@ -19,7 +19,9 @@ class ConnectFourImageView: UIImageView {
 }
 
 //possible piece colors, might just save us some time later.
-enum PieceColor{
-    case red
-    case yellow
+enum PieceColor: Int, RawRepresentable{
+    typealias RawValue = Int
+    
+    case red = 0
+    case yellow = 1
 }

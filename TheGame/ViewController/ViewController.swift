@@ -50,6 +50,7 @@ class ViewController: UIViewController {
             imageView.alpha = alpha
             alpha -= 0.1
         }
+        print(GameController.shared.convertGamePlayfieldToInt(playField: playField))
     }
     
     func dropPiece(intoColumn column: Int){
