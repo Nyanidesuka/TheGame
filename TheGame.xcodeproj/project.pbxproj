@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02BA4EDD22B2AB9400D88111 /* FetchViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EDC22B2AB9400D88111 /* FetchViewControllerViewController.swift */; };
+		02BA4EDF22B2AF8A00D88111 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EDE22B2AF8A00D88111 /* SignUpViewController.swift */; };
+		02BA4EE122B2B01B00D88111 /* ButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EE022B2B01B00D88111 /* ButtonController.swift */; };
 		17091DC922B1796F003AD823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17091DC822B1796F003AD823 /* AppDelegate.swift */; };
 		17091DCB22B1796F003AD823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17091DCA22B1796F003AD823 /* ViewController.swift */; };
 		17091DCE22B1796F003AD823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17091DCC22B1796F003AD823 /* Main.storyboard */; };
 		17091DD022B17971003AD823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17091DCF22B17971003AD823 /* Assets.xcassets */; };
 		17091DD322B17971003AD823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17091DD122B17971003AD823 /* LaunchScreen.storyboard */; };
+		17091DDB22B1ACF3003AD823 /* ConnectFourImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17091DDA22B1ACF3003AD823 /* ConnectFourImageView.swift */; };
+		170E30D322B29FCA004EDDCA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170E30D222B29FCA004EDDCA /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02BA4EDC22B2AB9400D88111 /* FetchViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchViewControllerViewController.swift; sourceTree = "<group>"; };
+		02BA4EDE22B2AF8A00D88111 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		02BA4EE022B2B01B00D88111 /* ButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonController.swift; sourceTree = "<group>"; };
 		17091DC522B1796F003AD823 /* TheGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17091DC822B1796F003AD823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17091DCA22B1796F003AD823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,9 @@
 		17091DCF22B17971003AD823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17091DD222B17971003AD823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17091DD422B17971003AD823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17091DDA22B1ACF3003AD823 /* ConnectFourImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFourImageView.swift; sourceTree = "<group>"; };
+		170E30D022B29FAD004EDDCA /* TheGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheGame.entitlements; sourceTree = "<group>"; };
+		170E30D222B29FCA004EDDCA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				170E30D322B29FCA004EDDCA /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,7 @@
 			children = (
 				17091DC722B1796F003AD823 /* TheGame */,
 				17091DC622B1796F003AD823 /* Products */,
+				170E30D122B29FCA004EDDCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,35 @@
 		17091DC722B1796F003AD823 /* TheGame */ = {
 			isa = PBXGroup;
 			children = (
+				170E30D022B29FAD004EDDCA /* TheGame.entitlements */,
 				17091DC822B1796F003AD823 /* AppDelegate.swift */,
 				17091DCA22B1796F003AD823 /* ViewController.swift */,
+				02BA4EDC22B2AB9400D88111 /* FetchViewControllerViewController.swift */,
+				02BA4EDE22B2AF8A00D88111 /* SignUpViewController.swift */,
+				02BA4EE022B2B01B00D88111 /* ButtonController.swift */,
 				17091DCC22B1796F003AD823 /* Main.storyboard */,
+				17091DDC22B1ACF8003AD823 /* Custom View */,
 				17091DCF22B17971003AD823 /* Assets.xcassets */,
 				17091DD122B17971003AD823 /* LaunchScreen.storyboard */,
 				17091DD422B17971003AD823 /* Info.plist */,
 			);
 			path = TheGame;
+			sourceTree = "<group>";
+		};
+		17091DDC22B1ACF8003AD823 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				17091DDA22B1ACF3003AD823 /* ConnectFourImageView.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		170E30D122B29FCA004EDDCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				170E30D222B29FCA004EDDCA /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +130,14 @@
 				TargetAttributes = {
 					17091DC422B1796F003AD823 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,7 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				17091DCB22B1796F003AD823 /* ViewController.swift in Sources */,
+				02BA4EE122B2B01B00D88111 /* ButtonController.swift in Sources */,
+				17091DDB22B1ACF3003AD823 /* ConnectFourImageView.swift in Sources */,
+				02BA4EDD22B2AB9400D88111 /* FetchViewControllerViewController.swift in Sources */,
 				17091DC922B1796F003AD823 /* AppDelegate.swift in Sources */,
+				02BA4EDF22B2AF8A00D88111 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +328,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TheGame/TheGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 39YHWYH93Z;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TheGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,8 +347,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TheGame/TheGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 39YHWYH93Z;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TheGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
