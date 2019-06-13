@@ -12,6 +12,7 @@
 		02BA4EE122B2B01B00D88111 /* ButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EE022B2B01B00D88111 /* ButtonController.swift */; };
 		02BA4EE422B2C52800D88111 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EE322B2C52800D88111 /* UserTableViewController.swift */; };
 		02BA4EE622B2C5B300D88111 /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EE522B2C5B300D88111 /* GamesTableViewController.swift */; };
+		02BA4EE822B2CC4400D88111 /* WillDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EE722B2CC4400D88111 /* WillDelete.swift */; };
 		17091DC922B1796F003AD823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17091DC822B1796F003AD823 /* AppDelegate.swift */; };
 		17091DCB22B1796F003AD823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17091DCA22B1796F003AD823 /* ViewController.swift */; };
 		17091DCE22B1796F003AD823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17091DCC22B1796F003AD823 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		02BA4EE022B2B01B00D88111 /* ButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonController.swift; sourceTree = "<group>"; };
 		02BA4EE322B2C52800D88111 /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
 		02BA4EE522B2C5B300D88111 /* GamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
+		02BA4EE722B2CC4400D88111 /* WillDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillDelete.swift; sourceTree = "<group>"; };
 		17091DC522B1796F003AD823 /* TheGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17091DC822B1796F003AD823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17091DCA22B1796F003AD823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				02BA4EDC22B2AB9400D88111 /* FetchViewControllerViewController.swift */,
 				02BA4EDE22B2AF8A00D88111 /* SignUpViewController.swift */,
 				02BA4EE322B2C52800D88111 /* UserTableViewController.swift */,
+				02BA4EE722B2CC4400D88111 /* WillDelete.swift */,
 				02BA4EE522B2C5B300D88111 /* GamesTableViewController.swift */,
 			);
 			path = ViewController;
@@ -229,6 +232,7 @@
 				02BA4EDD22B2AB9400D88111 /* FetchViewControllerViewController.swift in Sources */,
 				17091DC922B1796F003AD823 /* AppDelegate.swift in Sources */,
 				02BA4EE422B2C52800D88111 /* UserTableViewController.swift in Sources */,
+				02BA4EE822B2CC4400D88111 /* WillDelete.swift in Sources */,
 				02BA4EDF22B2AF8A00D88111 /* SignUpViewController.swift in Sources */,
 				170E30DD22B2A95C004EDDCA /* GameController.swift in Sources */,
 			);
