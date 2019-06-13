@@ -20,11 +20,11 @@ class User{
         self.appleUserReference = appleUserReference
     }
     //be able to create a User from a CKRecord
-    init?(record: CKRecord){
+    convenience init?(record: CKRecord){
         guard let username = record[UserKeys.usernameKey] as? String,
             let userReference = record[UserKeys.appleUserReferenceKey] as? CKRecord.Reference else {return nil}
-        self.username = username
-        self.appleUserReference = userReference
+        
+        self.init(username: username, appleUserReference: userReference)
         self.recordID = record.recordID
     }
     
