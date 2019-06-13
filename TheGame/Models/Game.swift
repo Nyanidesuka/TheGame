@@ -21,13 +21,13 @@ class Game{
     var columnSeven: [Int?]
     var playField: [[Int?]]
     
-    
+    let playerNames: [String]
     let players: [CKRecord.Reference]
     var turn: Bool
     var isComplete: Bool
     var recordID: CKRecord.ID?
     //be able to make a new Game. Just starting on red turn every time unless specified otherwise later. Every game starts as not complete so setting that as false by default.
-    init(players: [CKRecord.Reference], playField: [[Int?]], turn: Bool = true, isComplete: Bool = false){
+    init(players: [CKRecord.Reference], playerNames: [String], playField: [[Int?]], turn: Bool = true, isComplete: Bool = false){
         self.players = players
         self.playField = playField
         self.turn = turn
@@ -39,6 +39,7 @@ class Game{
         self.columnFive = playField[4]
         self.columnSix = playField[5]
         self.columnSeven = playField[6]
+        self.playerNames = playerNames
     }
     
     //be able to pull the game from a record
@@ -52,9 +53,10 @@ class Game{
         let columnFour = record[GameKeys.columnFourKey] as? [Int?],
         let columnFive = record[GameKeys.columnFiveKey] as? [Int?],
         let columnSix = record[GameKeys.columnSixKey] as? [Int?],
-        let columnSeven = record[GameKeys.columnSevenKey] as? [Int?] else {print("guarded in the Game convenience init"); return nil}
+        let columnSeven = record[GameKeys.columnSevenKey] as? [Int?],
+        let playerNames = record["playerNames"] as? [String] else {print("guarded in the Game convenience init"); return nil}
         let playField = [columnOne, columnTwo, columnThree, columnFour, columnFive, columnSix, columnSeven]
-        self.init(players: players, playField: playField, turn: turn, isComplete: isComplete)
+        self.init(players: players, playerNames: playerNames, playField: playField, turn: turn, isComplete: isComplete)
         self.recordID = record.recordID
     }
     
@@ -91,6 +93,7 @@ extension CKRecord{
         setValue(game.columnFive, forKey: GameKeys.columnFiveKey)
         setValue(game.columnSix, forKey: GameKeys.columnSixKey)
         setValue(game.columnSeven, forKey: GameKeys.columnSevenKey)
+        setValue(game.playerNames, forKey: "playerNames")
         game.recordID = recordID
     }
 }

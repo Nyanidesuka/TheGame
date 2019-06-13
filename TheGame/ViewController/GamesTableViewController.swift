@@ -38,7 +38,7 @@ class GamesTableViewController: UITableViewController {
         
 //        guard let opponent = User(record: opponentRecord) else {print("couldn't make a user from the record"); return UITableViewCell()}
         print("gamer")
-        cell.textLabel?.text = "game"
+        cell.textLabel?.text = "\(game.playerNames[0]) vs \(game.playerNames[1])"
         return cell
     }
 
