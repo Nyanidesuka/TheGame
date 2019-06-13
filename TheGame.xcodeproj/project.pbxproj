@@ -17,6 +17,10 @@
 		17091DD322B17971003AD823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17091DD122B17971003AD823 /* LaunchScreen.storyboard */; };
 		17091DDB22B1ACF3003AD823 /* ConnectFourImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17091DDA22B1ACF3003AD823 /* ConnectFourImageView.swift */; };
 		170E30D322B29FCA004EDDCA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170E30D222B29FCA004EDDCA /* CloudKit.framework */; };
+		170E30D522B2A06D004EDDCA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E30D422B2A06D004EDDCA /* User.swift */; };
+		170E30D822B2A07F004EDDCA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E30D722B2A07F004EDDCA /* Game.swift */; };
+		170E30DA22B2A941004EDDCA /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E30D922B2A941004EDDCA /* UserController.swift */; };
+		170E30DD22B2A95C004EDDCA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E30DC22B2A95C004EDDCA /* GameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		17091DDA22B1ACF3003AD823 /* ConnectFourImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFourImageView.swift; sourceTree = "<group>"; };
 		170E30D022B29FAD004EDDCA /* TheGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheGame.entitlements; sourceTree = "<group>"; };
 		170E30D222B29FCA004EDDCA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		170E30D422B2A06D004EDDCA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		170E30D722B2A07F004EDDCA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		170E30D922B2A941004EDDCA /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		170E30DC22B2A95C004EDDCA /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,8 @@
 				02BA4EDC22B2AB9400D88111 /* FetchViewControllerViewController.swift */,
 				02BA4EDE22B2AF8A00D88111 /* SignUpViewController.swift */,
 				02BA4EE022B2B01B00D88111 /* ButtonController.swift */,
+				170E30DB22B2A94A004EDDCA /* Model Controllers */,
+				170E30D622B2A070004EDDCA /* Models */,
 				17091DCC22B1796F003AD823 /* Main.storyboard */,
 				17091DDC22B1ACF8003AD823 /* Custom View */,
 				17091DCF22B17971003AD823 /* Assets.xcassets */,
@@ -96,6 +106,24 @@
 				170E30D222B29FCA004EDDCA /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		170E30D622B2A070004EDDCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				170E30D422B2A06D004EDDCA /* User.swift */,
+				170E30D722B2A07F004EDDCA /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		170E30DB22B2A94A004EDDCA /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				170E30D922B2A941004EDDCA /* UserController.swift */,
+				170E30DC22B2A95C004EDDCA /* GameController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,12 +205,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				170E30DA22B2A941004EDDCA /* UserController.swift in Sources */,
+				170E30D522B2A06D004EDDCA /* User.swift in Sources */,
+				170E30D822B2A07F004EDDCA /* Game.swift in Sources */,
 				17091DCB22B1796F003AD823 /* ViewController.swift in Sources */,
 				02BA4EE122B2B01B00D88111 /* ButtonController.swift in Sources */,
 				17091DDB22B1ACF3003AD823 /* ConnectFourImageView.swift in Sources */,
 				02BA4EDD22B2AB9400D88111 /* FetchViewControllerViewController.swift in Sources */,
 				17091DC922B1796F003AD823 /* AppDelegate.swift in Sources */,
 				02BA4EDF22B2AF8A00D88111 /* SignUpViewController.swift in Sources */,
+				170E30DD22B2A95C004EDDCA /* GameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
