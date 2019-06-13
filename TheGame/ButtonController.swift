@@ -12,7 +12,7 @@ class ButtonController: UIButton {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-     self.layer.cornerRadius = 20
+     self.layer.cornerRadius = 5
         self.backgroundColor = .blue
     }
 
