@@ -43,7 +43,8 @@ class GameController{
             return returnArray
         }
         //now we have everything we need for the new game, so lets make it.
-        let newGame = Game(players: [playerOneReference, playerTwoReference], playField: playField)
+        guard let playerName = UserController.shared.currentUser?.username else {return}
+        let newGame = Game(players: [playerOneReference, playerTwoReference], playerNames: [playerName, opponent.username], playField: playField)
         //Then make it into a record
         let newGameRecord = CKRecord(game: newGame)
         publicDB.save(newGameRecord) { (record, error) in
