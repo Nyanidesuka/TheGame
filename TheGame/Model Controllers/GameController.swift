@@ -21,25 +21,25 @@ class GameController{
     
     //CRUD Functions
     //create a new game
-    func createGame(opponent: User, completion: @escaping (Bool) -> Void){
+    func createGame(opponent: User, completion: @escaping (Game?) -> Void){
         print("create game fired")
         //so the players in this game will be the active player and whoever they're challenging
-        guard let playerOneRecordID = UserController.shared.currentUser?.recordID, let playerTwoRecordID = opponent.recordID else {completion(false); return}
+        guard let playerOneRecordID = UserController.shared.currentUser?.recordID, let playerTwoRecordID = opponent.recordID else {completion(nil); return}
         //we need a reference to each player
         let playerOneReference = CKRecord.Reference(recordID: playerOneRecordID, action: .deleteSelf)
         let playerTwoReference = CKRecord.Reference(recordID: playerTwoRecordID, action: .deleteSelf)
         
         //we also need to build a blank playfield!
-        var playField: [[Int?]]{
-            var returnArray: [[Int?]] = []
+        var playField: [[Int]]{
+            var returnArray: [[Int]] = []
             for _ in 0...6{
-                var columnArray: [Int?] = []
+                var columnArray: [Int] = []
                 for _ in 0...5{
-                    let nilInt: Int? = nil
-                    columnArray.append(nilInt)
+                    columnArray.append(2)
                 }
                 returnArray.append(columnArray)
             }
+            print(returnArray)
             return returnArray
         }
         //now we have everything we need for the new game, so lets make it.
@@ -49,18 +49,25 @@ class GameController{
         publicDB.save(newGameRecord) { (record, error) in
             if let error = error{
                 print("there was an error in \(#function); \(error.localizedDescription)")
-                completion(false);
+                completion(nil);
                 return
             }
-            guard let record = record, let game = Game(record: record) else {completion(false); return}
+            guard let record = record, let game = Game(record: record) else {completion(nil); return}
             GameController.shared.games.append(game)
-            completion(true)
+            completion(game)
         }
         
     }
     //update an existing game, the crux of this whole thing
     func updateGame(game: Game, playfield: [[Int?]], turn: Bool, isComplete: Bool, completion: @escaping (Bool) -> Void){
         game.playField = playfield
+        game.columnOne = playfield[0]
+        game.columnTwo = playfield[1]
+        game.columnThree = playfield[2]
+        game.columnFour = playfield[3]
+        game.columnFive = playfield[4]
+        game.columnSix = playfield[5]
+        game.columnSeven = playfield[6]
         game.turn = turn
         game.isComplete = isComplete
         let gameRecord = CKRecord(game: game)
@@ -80,7 +87,7 @@ class GameController{
     //fetch games.
     func fetchGames(forUser user: User, completion: @escaping (Bool) -> Void){
         let userReference = CKRecord.Reference(record: CKRecord(user: user), action: .deleteSelf)
-        let predicate = NSPredicate(format: "%K CONTAINS[c] %@", GameKeys.playersKey, userReference)
+        let predicate = NSPredicate(format: "playerOne == %@", userReference)
         let query = CKQuery(recordType: GameKeys.typeKey, predicate: predicate)
         publicDB.perform(query, inZoneWith: nil) { (records, error) in
             if let error = error{
@@ -91,7 +98,21 @@ class GameController{
             guard let records = records else {completion(false); return}
             //make the records into games
             let convertedGames = records.compactMap({return Game(record: $0)})
-            GameController.shared.games = convertedGames
+            GameController.shared.games += convertedGames
+            completion(true)
+        }
+        let predicateTwo = NSPredicate(format: "playerTwo == %@", userReference)
+        let queryTwo = CKQuery(recordType: GameKeys.typeKey, predicate: predicateTwo)
+        publicDB.perform(queryTwo, inZoneWith: nil) { (records, error) in
+            if let error = error{
+                print("there was an error in \(#function); \(error.localizedDescription)")
+                completion(false)
+                return
+            }
+            guard let records = records else {completion(false); return}
+            //make the records into games
+            let convertedGames = records.compactMap({return Game(record: $0)})
+            GameController.shared.games += convertedGames
             completion(true)
         }
     }
@@ -102,19 +123,49 @@ class GameController{
         for i in 0...6{
             var column: [Int?] = []
             for j in 0...5{
-                if let pieceColor = playField[i][j].pieceColor{
-                    column.append(pieceColor)
-                } else {
-                    let nilInt: Int? = nil
-                    column.append(nilInt)
-                }
+            let pieceColor = playField[i][j].pieceColor
+                column.append(pieceColor)
+                
             }
             returnArray.append(column)
         }
         return returnArray
     }
     
-    //we might wanna delete games; i'm not sure.
+    func convertIntsToPlayfield(fromArray array: [[Int?]], toPlayfield playField: [[ConnectFourImageView]]){
+        for i in 0...6{
+            for j in 0...5{
+                if let color = array[i][j]{
+                    playField[i][j].pieceColor = color
+                }
+            }
+        }
+        print(playField)
+    }
+    
+    func fetchAllGames(completion: @escaping (Bool) -> Void){
+       
+        //we need to grab all the users of an app and throw them into an array
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: GameKeys.typeKey, predicate: predicate)
+        self.publicDB.perform(query, inZoneWith: nil) { (records, error) in
+            if let error = error{
+                print("there was an error in \(#function); \(error.localizedDescription)")
+                completion(false)
+                return
+            }
+            //unwrap the records
+            guard let records = records else {completion(false); return}
+            let games = records.compactMap({return Game(record: $0)})
+            GameController.shared.games = games
+            completion(true)
+        }
+        
+    }
+    
+    func fetchPlayersForGame(game: Game, completion: @escaping (Bool) -> Void){
+        
+    }
     
     
 }
