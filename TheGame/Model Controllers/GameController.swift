@@ -98,11 +98,11 @@ class GameController{
     
     func convertGamePlayfieldToInt(playField: [[ConnectFourImageView]]) -> [[Int?]]{
         //so this needs to take in the playfield from the connect four vc and then turn it into [[Int?]]
-        var returnArray: [[Int?]] = [[]]
-        for i in 0...playField.count - 1{
+        var returnArray: [[Int?]] = []
+        for i in 0...6{
             var column: [Int?] = []
-            for j in 0...playField[i].count - 1{
-                if let pieceColor = playField[i][j].pieceColor as? Int?{
+            for j in 0...5{
+                if let pieceColor = playField[i][j].pieceColor{
                     column.append(pieceColor)
                 } else {
                     let nilInt: Int? = nil
