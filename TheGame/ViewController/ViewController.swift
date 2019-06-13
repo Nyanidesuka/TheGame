@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     var activeGame: Game?{
         didSet{
             loadViewIfNeeded()
-            guard let game = activeGame else {return}
+            guard let game = activeGame else {print("no active game"); return}
             GameController.shared.convertIntsToPlayfield(fromArray: game.playField, toPlayfield: self.playField)
         }
     }
@@ -74,6 +74,18 @@ class ViewController: UIViewController {
             playField[column][spotIndex].pieceColor = playerTurn ? 0 : 1
             playerTurn = !playerTurn
         }
+        let convertedPlayfield = GameController.shared.convertGamePlayfieldToInt(playField: playField)
+        print(convertedPlayfield)
+        print("trying to update game")
+        GameController.shared.updateGame(game: activeGame!, playfield: convertedPlayfield, turn: playerTurn, isComplete: activeGame?.isComplete ?? false) { (success) in
+            print("in completion")
+            if (success){
+                print("success")
+                DispatchQueue.main.async {
+                    self.navigationController?.popViewController(animated: true)
+                }
+            }
+        }
     }
     
     @IBAction func dropButtonPressed(_ sender: UIButton) {
@@ -84,7 +96,7 @@ class ViewController: UIViewController {
         for column in playField{
             for spot in column{
                 spot.image = UIImage(named: "grayPiece")
-                spot.pieceColor = nil
+                spot.pieceColor = 2
             }
         }
     }

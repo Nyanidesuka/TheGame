@@ -10,10 +10,16 @@ import UIKit
 
 class ConnectFourImageView: UIImageView {
     //this will be nil if the slot is empty; otherwise it'll tell us what color piece is in that spot.
-    var pieceColor: Int??{
+    var pieceColor: Int = 2{
         didSet{
-            guard let pieceColor = self.pieceColor else {self.image = UIImage(named: "grayPiece"); return}
-            self.image = UIImage(named: pieceColor == 0 ? "redPiece" : "yellowPiece")
+            print("we got set. Value: \(self.pieceColor)")
+            if self.pieceColor == 0{
+                self.image = UIImage(named: "redPiece")
+            } else if self.pieceColor == 1{
+                self.image = UIImage(named: "yellowPiece")
+            } else {
+                self.image = UIImage(named: "grayPiece")
+            }
         }
     }
 }

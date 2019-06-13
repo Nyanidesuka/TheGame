@@ -12,7 +12,13 @@ class UserTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        UserController.shared.fetchAllUsers { (success) in
+            if success{
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        }
     }
     
     // MARK: - Table view data source
@@ -40,7 +46,13 @@ class UserTableViewController: UITableViewController {
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toGamePlay" {
-            
+            print("prepare for segue fired")
+            guard let destinVC = segue.destination as? ViewController else {return}
+            guard let index = tableView.indexPathForSelectedRow else {return}
+            let opponent = UserController.shared.allUsers[index.row]
+            GameController.shared.createGame(opponent: opponent) { (game) in
+                destinVC.activeGame = game
+            }
         }
      }
     

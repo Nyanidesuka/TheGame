@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import CloudKit
 
 class GamesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        guard let user = UserController.shared.currentUser else {return}
+        GameController.shared.fetchAllGames { (success) in
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -26,7 +32,13 @@ class GamesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GameCell", for: indexPath)
 
         let game = GameController.shared.games[indexPath.row]
-        cell.textLabel?.text = "\(game.players[0])"
+        print(game.players.count)
+        
+        let opponentRecord = CKRecord(recordType: UserKeys.typeKey, recordID: game.players[0].recordID)
+        
+//        guard let opponent = User(record: opponentRecord) else {print("couldn't make a user from the record"); return UITableViewCell()}
+        print("gamer")
+        cell.textLabel?.text = "game"
         return cell
     }
 
@@ -41,14 +53,17 @@ class GamesTableViewController: UITableViewController {
     */
 
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "toGame"{
+            guard let destinVC = segue.destination as? ViewController,
+            let index = tableView.indexPathForSelectedRow else {return}
+            destinVC.activeGame = GameController.shared.games[index.row]
+        }
     }
-    */
+    
 
 }

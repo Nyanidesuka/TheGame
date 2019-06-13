@@ -282,7 +282,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="7gR-2V-OAW"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toGame" id="7gR-2V-OAW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -868,6 +868,6 @@
         <image name="yellowPiece" width="240" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="chy-hi-eyW"/>
+        <segue reference="7gR-2V-OAW"/>
     </inferredMetricsTieBreakers>
 </document>
