@@ -1,5 +1,5 @@
 //
-//  ButtonController.swift
+//  SignUp.swift
 //  TheGame
 //
 //  Created by Bobba Kadush on 6/13/19.
@@ -8,14 +8,11 @@
 
 import UIKit
 
-class ButtonController: UIButton {
+class SignUp: UIStackView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-     self.layer.cornerRadius = 5
-        self.backgroundColor = .green
         self.layer.zPosition = 1
-        self.titleLabel?.font = UIFont(name: "Helvetica", size: 24)
     }
 
 }

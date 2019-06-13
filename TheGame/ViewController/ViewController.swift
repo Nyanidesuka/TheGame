@@ -91,4 +91,8 @@ class ViewController: UIViewController {
     @IBAction func dropButtonPressed(_ sender: UIButton) {
         dropPiece(intoColumn: sender.tag - 1)
     }
+    @IBAction func goBackButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toGameTab", sender: nil)
+        
+    }
 }
