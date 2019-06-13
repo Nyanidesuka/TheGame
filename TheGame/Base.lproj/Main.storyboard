@@ -580,6 +580,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2F-RX-2Et">
                                 <rect key="frame" x="671.5" y="64" width="58" height="30"/>
                                 <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <action selector="goBackButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQD-ib-Q8j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -638,6 +641,7 @@
                         <outletCollection property="columnSevenCollection" destination="MHJ-rG-erk" collectionClass="NSMutableArray" id="QQL-5u-xAr"/>
                         <outletCollection property="columnSevenCollection" destination="NX0-nf-jGg" collectionClass="NSMutableArray" id="gHO-4I-8C5"/>
                         <outletCollection property="columnSevenCollection" destination="enu-ZJ-fsd" collectionClass="NSMutableArray" id="B3L-rK-Xcs"/>
+                        <segue destination="agr-cI-wHb" kind="show" identifier="toGameTab" id="qko-Si-sUi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -859,6 +863,7 @@
         <image name="yellowPiece" width="240" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="qko-Si-sUi"/>
         <segue reference="7gR-2V-OAW"/>
     </inferredMetricsTieBreakers>
 </document>

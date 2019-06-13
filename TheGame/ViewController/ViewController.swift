@@ -91,14 +91,8 @@ class ViewController: UIViewController {
     @IBAction func dropButtonPressed(_ sender: UIButton) {
         dropPiece(intoColumn: sender.tag - 1)
     }
-    
-    @IBAction func clearButtonTapped(_ sender: Any) {
-        for column in playField{
-            for spot in column{
-                spot.image = UIImage(named: "grayPiece")
-                spot.pieceColor = 2
-            }
-        }
+    @IBAction func goBackButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toGameTab", sender: nil)
+        
     }
 }
-
