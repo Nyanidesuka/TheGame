@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="s8w-tc-3df">
             <objects>
-                <viewController id="m7Y-IC-A89" sceneMemberID="viewController">
+                <viewController id="m7Y-IC-A89" customClass="SignUpViewController" customModule="TheGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aTg-TG-yGz">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,6 +204,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpButtonTapped:" destination="m7Y-IC-A89" eventType="touchUpInside" id="AJe-nv-ML7"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yellowPiece" translatesAutoresizingMaskIntoConstraints="NO" id="Qs7-qI-Edu">
                                 <rect key="frame" x="148" y="266" width="52" height="52"/>
@@ -222,21 +225,53 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="F1z-q3-noW"/>
                     </view>
+                    <connections>
+                        <outlet property="gamerTag" destination="oCB-gZ-EW3" id="ICM-hq-Chi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wQ-pN-OJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="60.9375" y="-823.1884057971015"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Users-->
+        <scene sceneID="d1c-CX-dZf">
+            <objects>
+                <tableViewController id="HEE-C7-msX" customClass="UserTableViewController" customModule="TheGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wyK-gO-XZz">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" id="hOw-f2-et1">
+                                <rect key="frame" x="0.0" y="28" width="896" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hOw-f2-et1" id="Ae7-qB-hMH">
+                                    <rect key="frame" x="44" y="0.0" width="808" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HEE-C7-msX" id="jnQ-jx-7gZ"/>
+                            <outlet property="delegate" destination="HEE-C7-msX" id="YrN-UC-9Cg"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Users" id="h8C-Pd-6jh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EiT-uj-Lne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1343" y="-823"/>
+        </scene>
+        <!--Games-->
         <scene sceneID="qwD-eM-cEn">
             <objects>
-                <tableViewController storyboardIdentifier="NavController" id="4yV-8w-HAd" sceneMemberID="viewController">
+                <tableViewController id="4yV-8w-HAd" customClass="GamesTableViewController" customModule="TheGame" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="v2f-he-ow3">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wbH-FD-Q2g">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameCell" id="wbH-FD-Q2g">
                                 <rect key="frame" x="0.0" y="28" width="896" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wbH-FD-Q2g" id="QTf-Nx-pZX">
@@ -253,15 +288,34 @@
                             <outlet property="delegate" destination="4yV-8w-HAd" id="Opi-wF-7hL"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Games" id="zTU-nb-X05"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRw-hh-TbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61" y="197"/>
+            <point key="canvasLocation" x="1343" y="877"/>
+        </scene>
+        <!--Will Delete-->
+        <scene sceneID="JMW-az-frm">
+            <objects>
+                <tabBarController storyboardIdentifier="NavController" id="agr-cI-wHb" customClass="WillDelete" customModule="TheGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wvF-Ef-E2I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4yV-8w-HAd" kind="relationship" relationship="viewControllers" id="U7i-dp-46J"/>
+                        <segue destination="HEE-C7-msX" kind="relationship" relationship="viewControllers" id="MIf-hr-Q13"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJo-gd-RkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="878"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GamePlay" id="BYZ-38-t0r" customClass="ViewController" customModule="TheGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -594,12 +648,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="197"/>
+            <point key="canvasLocation" x="2125" y="-313"/>
         </scene>
-        <!--View Controller-->
+        <!--Fetch View Controller View Controller-->
         <scene sceneID="NES-vL-iel">
             <objects>
-                <viewController id="vVq-eo-wrH" sceneMemberID="viewController">
+                <viewController id="vVq-eo-wrH" customClass="FetchViewControllerViewController" customModule="TheGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="diw-el-K8A">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

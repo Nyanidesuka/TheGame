@@ -1,5 +1,5 @@
 //
-//  SignUpViewController.swift
+//  WillDelete.swift
 //  TheGame
 //
 //  Created by Bobba Kadush on 6/13/19.
@@ -8,11 +8,14 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class WillDelete: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        DispatchQueue.main.async {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "GamePlay")
+            UIApplication.shared.windows.first?.rootViewController = viewController
         // Do any additional setup after loading the view.
     }
     
@@ -27,4 +30,5 @@ class SignUpViewController: UIViewController {
     }
     */
 
+}
 }

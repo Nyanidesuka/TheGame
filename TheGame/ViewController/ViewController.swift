@@ -45,11 +45,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //i added all the outlets in the wrong order and reversin them will give us easier columns to work with
-        var alpha = CGFloat(1)
-        for imageView in columnOneCollection{
-            imageView.alpha = alpha
-            alpha -= 0.1
-        }
     }
     
     func dropPiece(intoColumn column: Int){
@@ -68,7 +63,7 @@ class ViewController: UIViewController {
         }
         //actual stick the piece in there.
         if playField[column][spotIndex].image == UIImage(named: "grayPiece"){
-            playField[column][spotIndex].pieceColor = playerTurn ? PieceColor.red : PieceColor.yellow
+            playField[column][spotIndex].pieceColor = playerTurn ? 0 : 1
             playerTurn = !playerTurn
         }
     }
