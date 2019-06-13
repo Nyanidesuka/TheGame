@@ -18,6 +18,9 @@ class UserController{
     let publicDB = CKContainer.default().publicCloudDatabase
     private init(){} //flex
     
+    //an array of ALL users so we can populate the table view later. This'll also need a fetch.
+    var allUsers: [User] = []
+    
     //CRUD functions
     
     //first up we need to be able to fetch a user if one exists.
