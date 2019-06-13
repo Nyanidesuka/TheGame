@@ -10,6 +10,8 @@
 		02BA4EDD22B2AB9400D88111 /* FetchViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EDC22B2AB9400D88111 /* FetchViewControllerViewController.swift */; };
 		02BA4EDF22B2AF8A00D88111 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EDE22B2AF8A00D88111 /* SignUpViewController.swift */; };
 		02BA4EE122B2B01B00D88111 /* ButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EE022B2B01B00D88111 /* ButtonController.swift */; };
+		02BA4EE422B2C52800D88111 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EE322B2C52800D88111 /* UserTableViewController.swift */; };
+		02BA4EE622B2C5B300D88111 /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EE522B2C5B300D88111 /* GamesTableViewController.swift */; };
 		17091DC922B1796F003AD823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17091DC822B1796F003AD823 /* AppDelegate.swift */; };
 		17091DCB22B1796F003AD823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17091DCA22B1796F003AD823 /* ViewController.swift */; };
 		17091DCE22B1796F003AD823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17091DCC22B1796F003AD823 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		02BA4EDC22B2AB9400D88111 /* FetchViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchViewControllerViewController.swift; sourceTree = "<group>"; };
 		02BA4EDE22B2AF8A00D88111 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		02BA4EE022B2B01B00D88111 /* ButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonController.swift; sourceTree = "<group>"; };
+		02BA4EE322B2C52800D88111 /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		02BA4EE522B2C5B300D88111 /* GamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
 		17091DC522B1796F003AD823 /* TheGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17091DC822B1796F003AD823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17091DCA22B1796F003AD823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +59,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02BA4EE222B2B60500D88111 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				17091DCA22B1796F003AD823 /* ViewController.swift */,
+				02BA4EDC22B2AB9400D88111 /* FetchViewControllerViewController.swift */,
+				02BA4EDE22B2AF8A00D88111 /* SignUpViewController.swift */,
+				02BA4EE322B2C52800D88111 /* UserTableViewController.swift */,
+				02BA4EE522B2C5B300D88111 /* GamesTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		17091DBC22B1796F003AD823 = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +93,7 @@
 			children = (
 				170E30D022B29FAD004EDDCA /* TheGame.entitlements */,
 				17091DC822B1796F003AD823 /* AppDelegate.swift */,
-				17091DCA22B1796F003AD823 /* ViewController.swift */,
-				02BA4EDC22B2AB9400D88111 /* FetchViewControllerViewController.swift */,
-				02BA4EDE22B2AF8A00D88111 /* SignUpViewController.swift */,
+				02BA4EE222B2B60500D88111 /* ViewController */,
 				02BA4EE022B2B01B00D88111 /* ButtonController.swift */,
 				170E30DB22B2A94A004EDDCA /* Model Controllers */,
 				170E30D622B2A070004EDDCA /* Models */,
@@ -206,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				170E30DA22B2A941004EDDCA /* UserController.swift in Sources */,
+				02BA4EE622B2C5B300D88111 /* GamesTableViewController.swift in Sources */,
 				170E30D522B2A06D004EDDCA /* User.swift in Sources */,
 				170E30D822B2A07F004EDDCA /* Game.swift in Sources */,
 				17091DCB22B1796F003AD823 /* ViewController.swift in Sources */,
@@ -213,6 +228,7 @@
 				17091DDB22B1ACF3003AD823 /* ConnectFourImageView.swift in Sources */,
 				02BA4EDD22B2AB9400D88111 /* FetchViewControllerViewController.swift in Sources */,
 				17091DC922B1796F003AD823 /* AppDelegate.swift in Sources */,
+				02BA4EE422B2C52800D88111 /* UserTableViewController.swift in Sources */,
 				02BA4EDF22B2AF8A00D88111 /* SignUpViewController.swift in Sources */,
 				170E30DD22B2A95C004EDDCA /* GameController.swift in Sources */,
 			);
